@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+<html lang = "en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" style="background-color:DodgerBlue">
+
+    <title>MoodMeTest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.js"></script>
+
+    <!-- CSS
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.css"/>
+  </head>
+
+
+  <body ng-app="myApp" background="resources/bgd.png">
+
+    <!-- header
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <style>
+
+    #grad1 {
+      height: 100px;
+      background-color: indigo; /* For browsers that do not support gradients */
+      background-image: linear-gradient(to right, purple , blue);
+      opacity : 1;
+    }
+
+    </style>
+
+
+    <header id="grad1" class="w3-container">
+        <h1 style="color:white" >MoodMeTest</h1>
+        <h2 id="h2" style="font-size:14px" > Detect face expressions </h2>
+    </header>
+
+
+
+    <!-- dynamic content placeholder
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <div ui-view></div>
+
+    <style>
+
+    #h2 {
+      text-align : left;
+      color:white;
+    }
+
+    #fileUpload {
+      color:indigo;
+    }
+
+    #h3 {
+      text-align : center;
+      color:white;
+    }
+
+    #grad2 {
+      height: 40px;
+      background-image: linear-gradient(to left, purple , blue); /* For browsers that do not support gradients */
+      opacity : 1;
+      position: fixed;
+      width: 100%;
+      bottom: 0px;
+
+    }
+
+    .center {
+      margin: 0 auto;
+      width: 230px;
+      align-items: center;
+    }
+
+    #center {
+      position: relative;
+      margin: 0 auto;
+      width: 230px;
+      align-items: center;
+      align-text : center;
+    }
+
+    #success{
+      font-color: white;
+    }
+
+    img{
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      transform: translate(50%);
+
+
+    }
+
+    canvas{
+      position :absolute;
+      justify-content: center;
+      align-items : center;
+      transform: translate(50%);
+    }
+
+
+  .choose input[type=file] {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+  font-size: 90px;
+  }
+  .btn-upload {
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+    p{
+      position: absolute;
+      justify-content: center;
+    }
+
+    </style>
+
+    <body >
+    </body>
+    <footer id="grad2" class="w3-container">
+        <h2 id="h3" style="font-size:12px" > <strong> © Developed and designed by Maxime Heguy </strong></h2>
+    </footer>
+
+    <!-- libraries
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <script src="jslibs/angular.min.js"></script>
+    <script src="jslibs/angular-ui-router.min.js"></script>
+    <script src="jslibs/face-api.min.js"></script>
+
+    <!-- controllers
+    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+    <script src="js/myapp.js"></script>
+    <script src="js/samplefactory.js"></script>
+    <script src="home/homecontroller.js"></script>
+
+
+
+  </body>
+
+</html>
