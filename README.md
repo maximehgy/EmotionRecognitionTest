@@ -1,2 +1,2 @@
 # MoodMeTest
-Face expressions detection (MoodMe)
+Face expressions detection for MoodMe
